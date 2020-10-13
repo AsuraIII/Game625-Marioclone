@@ -30,7 +30,7 @@ public class ObjectSpawner : MonoBehaviour
         {
             ObjectPooler._instance.SpawnFromPool(ObjectType.PowerUp, RandomPosition());
         }
-        else
+        else if ((ranNum <= 8.0f))
         {
             ObjectPooler._instance.SpawnFromPool(ObjectType.Coin, RandomPosition());
         }
