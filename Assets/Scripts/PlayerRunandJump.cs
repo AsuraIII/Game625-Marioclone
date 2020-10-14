@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerRunandJump : MonoBehaviour
 {
-    public float speed;
+    public float speed = 6;
     Rigidbody2D rb;
-    public float jumpForce;
+    public float jumpForce = 6;
 
     bool isGrounded = false;
     public Transform isGroundedChecker;

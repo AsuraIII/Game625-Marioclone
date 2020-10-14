@@ -14,6 +14,7 @@ public class AchievementSystem : MonoBehaviour
     {
         ObjectPooler._instance.ReturnToPool(ObjectType.Coin,coin.gameObject);
         GameManager._instance.Score += coin.Point;
+        //ObjectSpawner._instance.OutOffSpawnList(coin.gameObject);
     }
 
     private void PowerUpCollectedAchievement(PowerUp powerUp)

@@ -46,7 +46,7 @@ public class ObjectPooler : MonoBehaviour
     }
 
     //return gameObject from the pool
-    public GameObject SpawnFromPool(ObjectType type, Vector3 position)
+    public GameObject SpawnFromPool(ObjectType type, Vector2 position)
     {
         if (poolDict != null)
         {
@@ -71,6 +71,15 @@ public class ObjectPooler : MonoBehaviour
     {
         gameObj.SetActive(false);
         poolDict[type].Enqueue(gameObj);
+    }
+
+    public void GetObjByPosition(ObjectType type,Vector2 pos)
+    {
+        foreach (GameObject obj in poolDict[type])
+        {
+          
+        }
+        
     }
 
 }
